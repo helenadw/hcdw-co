@@ -1,0 +1,51 @@
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+.hero-container{
+    position: relative;
+
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-small-copy{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+
+}
+.hero-copy{
+    font-family: 'IBM Plex Serif';
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 200;
+    margin: 0px !important;
+}
+
+.hero-button{
+    font-family: "IBM Plex Sans";
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid black;
+    width: 200px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.5s ease;
+}
+.hero-button:hover{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    font-style: italic;
+}

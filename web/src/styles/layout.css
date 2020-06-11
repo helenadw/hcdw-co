@@ -1,0 +1,21 @@
+@import './vars.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,300;1,600&display=swap');
+
+html {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-line-height);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-white);
+  color: var(--color-black);
+  margin: 0;
+}
+
+html, body, body > div, body > div > div {
+  height: 100%;
+}
