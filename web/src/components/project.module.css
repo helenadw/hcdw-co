@@ -9,7 +9,7 @@
 
 .mainImage {
   position: relative;
-  background: #eee;
+  background: #fff;
   padding-bottom: calc(9 / 16 * 100%);
 
   @nest & img {
@@ -19,7 +19,7 @@
     width: 100%;
     height: 100%;
     vertical-align: top;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -46,6 +46,8 @@
 }
 
 .metaContent {
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
 }
 
 .publishedAt {
@@ -54,7 +56,7 @@
 }
 
 .categories {
-  border-top: 1px solid var(--color-black);
+  border-top: 0px solid var(--color-black);
   margin: 2rem 0 3rem;
 
   @nest & ul {
@@ -74,7 +76,7 @@
 }
 
 .relatedProjects {
-  border-top: 1px solid var(--color-black);
+  border-top: 0px solid var(--color-black);
   margin: 2rem 0 3rem;
 
   @nest & ul {
@@ -82,6 +84,7 @@
     margin: 0.75rem 0;
     padding: 0;
   }
+  
 
   @nest & a {
     display: inline-block;
@@ -89,6 +92,11 @@
     text-decoration: none;
     padding: 0.25rem 0;
   }
+}
+
+.related-projects-link:hover{
+  color: blue;
+
 }
 
 .relatedProjectsHeadline {

@@ -7,7 +7,7 @@
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
-  background: #eee;
+  background: #ffffff;
 
   @nest & img {
     position: absolute;
@@ -15,14 +15,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
 .title {
   @media (hover: hover) {
     @nest .root:hover & {
-      text-decoration: underline;
+      text-decoration: none;
+      
     }
   }
 }
@@ -30,6 +31,10 @@
 .excerpt {
   @nest & p {
     margin: 0.5em 0;
+    font-size: 1rem;
+    visibility: hidden;
+    
+
   }
 
   @nest & strong {

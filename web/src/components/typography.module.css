@@ -20,8 +20,9 @@
   --font-title3-line-height: calc(28 / 24);
   --font-title2-size: calc(32 / var(--base-unit) * 1rem);
   --font-title2-line-height: calc(36 / 32);
-  --font-title1-size: calc(44 / var(--base-unit) * 1rem);
-  --font-title1-line-height: calc(56 / 44);
+  --font-title1-size: calc(68 / var(--base-unit) * 1rem);
+  --font-title1-line-height: calc(82 / 68);
+  
 }
 
 
@@ -30,6 +31,10 @@
  * Statically sized elements
  */
 
+.hero {
+  font-size: var(--font-hero-size);
+  line-height: var(--font-hero-line-height);
+}
 .title1 {
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
@@ -73,6 +78,8 @@
  */
 
 .paragraph {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
   margin: 0.5rem 0 1rem 0;
@@ -92,10 +99,15 @@
   background: #eee;
 }
 
+
+
+
 .responsiveTitle1 {
-  font-weight: 900;
-  font-size: var(--font-title3-size);
-  line-height: var(--font-title3-line-height);
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  font-weight: 200;
+  font-size: var(--font-title1-size);
+  line-height: var(--font-title1-line-height);
   margin: 1rem 0 2rem;
 
   @media (--media-min-small) {
@@ -110,9 +122,10 @@
 }
 
 .responsiveTitle2 {
-  font-weight: 900;
-  font-size: var(--font-large-size);
-  line-height: var(--font-large-line-height);
+  font-family: 'IBM Plex Serif';
+  font-weight: 200;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
   margin: 1.5rem 0 0.5rem;
 
   @media (--media-min-small) {
@@ -127,7 +140,9 @@
 }
 
 .responsiveTitle3 {
-  font-weight: 900;
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  font-weight: 200;
   font-size: var(--font-large-size);
   line-height: var(--font-large-line-height);
   margin: 1rem 0 0.5rem;
@@ -144,6 +159,9 @@
 }
 
 .responsiveTitle4 {
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  font-weight: 200;
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
   margin: 1rem 0 0.5rem;
@@ -158,3 +176,4 @@
     line-height: var(--font-large-line-height);
   }
 }
+

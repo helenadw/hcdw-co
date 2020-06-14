@@ -2,10 +2,13 @@
 @import '../styles/vars.css';
 
 .root {
-  z-index: 100;
-  position: relative;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: flex-start;
+
+
 }
 
 .wrapper {
@@ -14,7 +17,8 @@
   width: 100vw;
   padding: 1em;
   display: flex;
-  
+
+
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
@@ -38,7 +42,8 @@
 
     @media (hover: hover) {
       @nest &:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        font-style: normal;
       }
     }
   }
@@ -79,7 +84,7 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
@@ -115,13 +120,19 @@
   }
 }
 
+
+
 .nav-link:hover{
   color: blue;
   text-decoration: none;
+  font-style: normal;
 }
-.active-nav-link{
+
+{/* targetting the active link*/}
+[aria-current]:not([aria-current='false']){
   color: blue;
 }
+
 
 .showNav {
   display: block;

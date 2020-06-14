@@ -1,3 +1,8 @@
+
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+
 .root {
   display: block;
   color: inherit;
@@ -10,8 +15,9 @@
 
 .leadMediaThumb {
   position: relative;
-  padding-bottom: 66.666%;
+  padding-bottom: 50%;
   background: #fff;
+  
 
   @nest & img {
     position: absolute;
@@ -19,20 +25,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
 .title {
   @media (hover: hover) {
     @nest .root:hover & {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
 
 .excerpt {
   @nest & p {
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
     margin: 0.5em 0;
   }
 

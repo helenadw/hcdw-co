@@ -22,13 +22,16 @@
 .hero-copy{
     font-family: 'IBM Plex Serif';
     font-style: italic;
-    font-size: 4rem;
+    composes: responsiveTitle1 from './typography.module.css';
     font-weight: 200;
     margin: 0px !important;
+    
 }
 
 .hero-button{
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Mono";
+    font-size: 0.75rem;
+    text-decoration: none;
     margin: 30px 0;
     padding: 10px;
     border-radius: 0;
@@ -36,16 +39,18 @@
     width: 200px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.5s ease;
+    background-color: #F5F5F1;
+    color: black;
 }
 .hero-button:hover{
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
 }
 
-a{
+.hero-link{
     color: blue;
     text-decoration: none;
 }
 
-a:hover{
+.hero-link:hover{
     font-style: italic;
 }

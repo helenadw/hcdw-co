@@ -10,7 +10,7 @@ import RoleList from './role-list'
 import styles from './project.module.css'
 
 function Project (props) {
-  const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props
+const { _rawBody, title, categories, mainImage, /*members,*/ publishedAt, relatedProjects } = props
   return (
     <article className={styles.root}>
       {props.mainImage && mainImage.asset && (
@@ -39,7 +39,7 @@ function Project (props) {
                   : format(new Date(publishedAt), 'MMMM Do YYYY')}
               </div>
             )}
-            {members && <RoleList items={members} title='Authors' />}
+            {/*{members && <RoleList items={members} title='Members' />}*/}
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
@@ -55,8 +55,8 @@ function Project (props) {
                 <h3 className={styles.relatedProjectsHeadline}>Related projects</h3>
                 <ul>
                   {relatedProjects.map(project => (
-                    <li key={`related_${project._id}`}>
-                      <Link to={`/project/${project.slug.current}`}>{project.title}</Link>
+                    <li key={`related_${project._id}`} className={styles.relatedProjectLink}>
+                      <Link to={`/project/${project.slug.current}`} className={styles.relatedProjectLink}>{project.title}</Link>
                     </li>
                   ))}
                 </ul>

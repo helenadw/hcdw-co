@@ -17,7 +17,7 @@ export const query = graphql`
       keywords
     }
 
-    projects: allSanityProject(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
+    projects: allSanityProject(limit: 3, sort: { fields: [publishedAt], order: DESC }) {
       edges {
         node {
           id
