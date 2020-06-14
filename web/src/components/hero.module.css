@@ -22,10 +22,9 @@
 .hero-copy{
     font-family: 'IBM Plex Serif';
     font-style: italic;
-    composes: responsiveTitle1 from './typography.module.css';
+    font-size: 5vw;
     font-weight: 200;
     margin: 0px !important;
-    
 }
 
 .hero-button{
