@@ -67,6 +67,7 @@
 }
 
 .nav {
+  display: none;
   font-family: 'IBM Plex Mono';
   font-style: italic;
 
