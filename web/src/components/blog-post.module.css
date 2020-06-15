@@ -5,6 +5,9 @@
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
+  @media (--media-max-small){
+    font-size: 30px;
+ } 
 }
 
 .mainImage {
