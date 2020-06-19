@@ -12,16 +12,22 @@
 
 .mainImage {
   position: relative;
-  background: #fff;
+  background: none;
   padding-bottom: calc(9 / 16 * 100%);
 
+
+
   @nest & img {
+   
     position: absolute;
-    top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+   
     object-fit: contain;
   }
 }
@@ -50,7 +56,7 @@
 
 .metaContent {
   font-family: 'IBM Plex Mono';
-  font-style: italic;
+  font-style: normal;
 }
 
 .publishedAt {
