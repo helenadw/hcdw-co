@@ -11,9 +11,11 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: var(--color-white);
+  background: #fff2f0;
   color: var(--color-black);
   margin: 70px 0 0 0;
+  
+  
   
 
 }

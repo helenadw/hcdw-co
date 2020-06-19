@@ -1,7 +1,7 @@
 @import '../styles/media-queries.css';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap');
 
 
 :root {
@@ -109,9 +109,9 @@
 
 
 .responsiveTitle1 {
-  font-family: 'IBM Plex Serif';
+  font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 200;
+  font-weight: 600;
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
   margin: 1rem 0 2rem;
@@ -128,8 +128,8 @@
 }
 
 .responsiveTitle2 {
-  font-family: 'IBM Plex Serif';
-  font-weight: 200;
+  font-family: 'IBM Plex Mono';
+  font-weight: 600;
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin: 1.5rem 0 0.5rem;
@@ -146,9 +146,9 @@
 }
 
 .responsiveTitle3 {
-  font-family: 'IBM Plex Serif';
+  font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 200;
+  font-weight: 600;
   font-size: var(--font-large-size);
   line-height: var(--font-large-line-height);
   margin: 1rem 0 0.5rem;
@@ -165,9 +165,9 @@
 }
 
 .responsiveTitle4 {
-  font-family: 'IBM Plex Serif';
+  font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 200;
+  font-weight: 600;
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
   margin: 1rem 0 0.5rem;
@@ -183,3 +183,12 @@
   }
 }
 
+a {
+  color: black;
+}
+a:hover{
+  font-family: 'IBM Plex Mono';
+  font-style: italic;
+
+
+}
