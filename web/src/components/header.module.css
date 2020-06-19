@@ -16,8 +16,6 @@
   padding: 1em;
   display: flex;
 
-
-
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
   }
@@ -27,10 +25,12 @@
   font-size: inherit;
   font-family: 'IBM Plex Mono';
   font-style: italic;
-  font-weight: 100;
+  font-weight: 700;
   margin: 0;
   flex: 1;
-  color: blue;
+  color: black;
+  display: flex;
+  align-items: center;
 
   @nest & a {
     display: inline-block;
@@ -55,6 +55,7 @@
   margin: 0;
   padding: calc(14 / 17 / 2 * 1rem);
   outline: none;
+  z-index: 1000;
 
   & svg {
     display: block;
@@ -70,6 +71,7 @@
   display: none;
   font-family: 'IBM Plex Mono';
   font-style: italic;
+  font-weight: 700;
 
   @nest & ul {
     margin: 0;
@@ -90,14 +92,16 @@
 
   @media (--media-max-small) {
     position: absolute;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    background: #fff2f0;
+    height: 100vh;
+    font-size: 2rem;
+    
     left: 0;
     right: 0;
-    top: 4rem;
+    top: 00;
 
     @nest & ul {
-      padding: 1rem 0;
+      padding: 4rem 0;
     }
 
     @nest & ul li a {
@@ -122,15 +126,16 @@
 
 
 
-.nav-link:hover{
-  color: blue;
+ .nav-link:hover{
+  
   text-decoration: none;
   font-style: normal;
+  font-weight: 500;
 }
 
 /* targetting the active link*/
 [aria-current]:not([aria-current='false']){
-  color: blue;
+  font-weight: 500;
 }
 
 
