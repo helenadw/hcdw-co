@@ -2,7 +2,7 @@
 @import '../styles/vars.css';
 
 .root {
-  margin: 2em 0 4em;
+  margin: 2em 0 2em;
 }
 
 .headline {
@@ -29,6 +29,7 @@
 
   @media (--media-max-small) {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
   }
 
   @media (--media-min-medium) {
