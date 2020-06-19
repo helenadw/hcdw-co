@@ -20,7 +20,7 @@
     margin: auto;
     width: 70%;
     height: 80%;
-    background: url('/Desktop1.png');
+    background: url('./Images/Desktop1.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
