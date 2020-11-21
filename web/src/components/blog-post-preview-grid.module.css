@@ -6,10 +6,8 @@
 }
 
 .headline {
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  font-size: var(--font-small-size);
-  line-height: var(--font-small-line-height);
+  composes: responsiveTitle2 from './typography.module.css';
+
   margin: 2rem 0;
 
   @nest & a {
@@ -38,9 +36,9 @@
 }
 
 .browseMoreNav {
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  composes: small from './typography.module.css';
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
+  composes: large from './typography.module.css';
   margin-top: 1rem;
   text-align: right;
 

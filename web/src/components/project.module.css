@@ -1,11 +1,12 @@
 @import '../styles/media-queries.css';
 @import '../styles/vars.css';
 
-.root {}
+.root {
+}
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
-  @media (--media-max-small){
+  @media (--media-max-small) {
     font-size: 30px;
   }
 }
@@ -15,10 +16,7 @@
   background: none;
   padding-bottom: calc(9 / 16 * 100%);
 
-
-
   @nest & img {
-   
     position: absolute;
     right: 0;
     left: 0;
@@ -27,7 +25,7 @@
     margin: auto;
     width: 80%;
     height: 80%;
-   
+
     object-fit: contain;
   }
 }
@@ -55,7 +53,7 @@
 }
 
 .metaContent {
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Sans';
   font-style: normal;
 }
 
@@ -93,7 +91,6 @@
     margin: 0.75rem 0;
     padding: 0;
   }
-  
 
   @nest & a {
     display: inline-block;
@@ -103,9 +100,8 @@
   }
 }
 
-.related-projects-link:hover{
+.related-projects-link:hover {
   color: blue;
-
 }
 
 .relatedProjectsHeadline {

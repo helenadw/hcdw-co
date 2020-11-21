@@ -1,12 +1,14 @@
-
 @import '../styles/media-queries.css';
 @import '../styles/vars.css';
-
 
 .root {
   display: block;
   color: inherit;
   text-decoration: none;
+}
+.project-card {
+  background: var(--color-soft-beige);
+  padding: 1rem;
 }
 
 .title {
@@ -17,7 +19,6 @@
   position: relative;
   padding-bottom: 50%;
   background: none;
-  
 
   @nest & img {
     position: absolute;
@@ -39,7 +40,8 @@
 
 .excerpt {
   @nest & p {
-    font-family: 'IBM Plex Mono';
+    font-family: 'IBM Plex Sans';
+    letter-spacing: 1px;
     font-size: 1rem;
     margin: 0.5em 0;
   }

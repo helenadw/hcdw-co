@@ -23,9 +23,7 @@
 
 .branding {
   font-size: inherit;
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  font-weight: 700;
+  font-family: 'DM Sans';
   margin: 0;
   flex: 1;
   color: black;
@@ -64,14 +62,12 @@
   @media (--media-min-small) {
     display: none;
   }
-
 }
 
 .nav {
   display: none;
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
-  font-weight: 700;
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
 
   @nest & ul {
     margin: 0;
@@ -92,10 +88,10 @@
 
   @media (--media-max-small) {
     position: absolute;
-    background: #fff2f0;
+    background: var(--color-soft-beige);
     height: 100vh;
     font-size: 2rem;
-    
+
     left: 0;
     right: 0;
     top: 00;
@@ -124,20 +120,24 @@
   }
 }
 
-
-
- .nav-link:hover{
-  
+.nav-link {
+  font-family: 'DM Sans', sans-serif;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  margin-left: 1em;
   text-decoration: none;
   font-style: normal;
-  font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #393a41;
 }
 
 /* targetting the active link*/
-[aria-current]:not([aria-current='false']){
+[aria-current]:not([aria-current='false']) {
   font-weight: 500;
 }
-
 
 .showNav {
   display: block;

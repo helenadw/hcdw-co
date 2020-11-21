@@ -2,15 +2,18 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Icon from './icons'
 import { cn } from '../lib/helpers'
+import Logo from './Images/hcdw-logo.svg'
 
 import styles from './header.module.css'
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
-      <h1 className={styles.branding}>
-        <Link to='/'>{siteTitle}</Link>
-      </h1>
+      <div className={styles.branding}>
+        <Link to='/'>
+        <img src={Logo} alt='logo'></img>
+        </Link>
+      </div>
 
       <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
         <Icon symbol='hamburger' />

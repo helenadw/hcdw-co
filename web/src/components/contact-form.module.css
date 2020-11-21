@@ -1,0 +1,25 @@
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+.contact-form {
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+}
+.contact-form-names {
+  display: flex;
+  justify-content: space-between;
+}
+.first-name,
+.last-name,
+.email,
+.project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: solid red;
+}

@@ -19,14 +19,14 @@ function ProjectPreviewGrid (props) {
       <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
-            <li key={node.id}>
+            <li key={node.id} className={styles.projectItem}>
               <ProjectPreview {...node} />
             </li>
           ))}
       </ul>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
-          <Link to={props.browseMoreHref}>Browse more</Link>
+          <Link to={props.browseMoreHref}>see more</Link>
         </div>
       )}
     </div>

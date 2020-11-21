@@ -10,6 +10,7 @@ import { responsiveTitle3 } from './typography.module.css'
 function ProjectPreview (props) {
   return (
     <Link className={styles.root} to={`/project/${props.slug.current}`}>
+    <div className={styles.projectCard}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -27,6 +28,7 @@ function ProjectPreview (props) {
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
+      </div>
     </Link>
   )
 }

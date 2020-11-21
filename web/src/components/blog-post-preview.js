@@ -10,6 +10,7 @@ import { responsiveTitle3 } from './typography.module.css'
 function BlogPostPreview (props) {
   return (
     <Link className={styles.root} to={getBlogUrl(props.publishedAt, props.slug.current)}>
+    <div className={styles.blogCard}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -27,6 +28,7 @@ function BlogPostPreview (props) {
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
+      </div>
     </Link>
   )
 }

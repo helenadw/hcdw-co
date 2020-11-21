@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './header'
+import Footer from './footer'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -8,12 +9,13 @@ const Layout = ({ children, companyInfo, onHideNav, onShowNav, showNav, siteTitl
   <>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <div className={styles.content}>{children}</div>
+    <Footer />
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.companyAddress}>
           {companyInfo && (
             <div>
-              {companyInfo.name}
+              {/* {companyInfo.name} */}
               <br />
               {companyInfo.address1}
               <br />
@@ -30,9 +32,7 @@ const Layout = ({ children, companyInfo, onHideNav, onShowNav, showNav, siteTitl
         </div>
 
         <div className={styles.siteInfo}>
-          © {new Date().getFullYear()}, Built with <a href='https://www.sanity.io' target='_blank'>Sanity</a> &amp;
-          {` `}
-          <a href='https://www.gatsbyjs.org' target='_blank'>Gatsby</a>
+          © {new Date().getFullYear()} HCDW, registered company in England and Wales 12007094
         </div>
       </div>
     </footer>
