@@ -8,7 +8,7 @@
 }
 .project-card {
   background: var(--color-soft-beige);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .title {
