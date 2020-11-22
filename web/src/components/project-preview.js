@@ -1,3 +1,4 @@
+import { max } from 'date-fns'
 import { Link } from 'gatsby'
 import React from 'react'
 import { cn, buildImageObj } from '../lib/helpers'
@@ -15,8 +16,7 @@ function ProjectPreview (props) {
         {props.mainImage && props.mainImage.asset && (
           <img
             src={imageUrlFor(buildImageObj(props.mainImage))
-              .width(600)
-              .height(Math.floor((9 / 16) * 600))
+              
               .url()}
             alt={props.mainImage.alt}
           />
