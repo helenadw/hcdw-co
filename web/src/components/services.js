@@ -5,7 +5,9 @@ import servicesStyles from './services.module.css'
 // import Drop from './icons/drop.svg'
 // import Cube from './icons/cube.svg'
 
-
+import Code from './icons/Icons/code.png'
+import Drop from './icons/Icons/drop.png'
+import Cube from './icons/Icons/cube.png'
 
 function Services() {
     return (
@@ -14,17 +16,17 @@ function Services() {
                 <h2 className={servicesStyles.servicesTitle}>services</h2>
                 <div className={servicesStyles.servicesCards}>
                     <div className={servicesStyles.servicesCard}>
-                    {/* <img src={Drop} alt='dropper icon'></img> */}
+                    <img src={Drop} alt='dropper icon'></img>
                     <h4 className={servicesStyles.serviceType}>web design</h4>
                     <p>user-friendly design your customers will love</p>
                     </div>
                     <div className={servicesStyles.servicesCard}>
-                    {/* <img src={Code} alt='code icon'></img> */}
+                    <img src={Code} alt='code icon'></img>
                     <h4 className={servicesStyles.serviceType}>web development</h4>
                     <p>lightweight solutions that are easy to maintain</p>
                     </div>
                     <div className={servicesStyles.servicesCard}>
-                    {/* <img src={Cube} alt='cube icon'></img> */}
+                    <img src={Cube} alt='cube icon'></img>
                     <h4 className={servicesStyles.serviceType}>automation</h4>
                     <p>systems that save time in your business</p>
                     </div>
