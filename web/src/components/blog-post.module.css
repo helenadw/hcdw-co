@@ -2,19 +2,18 @@
 @import '../styles/vars.css';
 
 .root {
-  
 }
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
-  @media (--media-max-small){
+  @media (--media-max-small) {
     font-size: 30px;
- } 
+  }
 }
 
 .mainImage {
+  display: none;
   position: relative;
-  background: #fff2f0;
   padding-bottom: calc(9 / 16 * 100%);
 
   @nest & img {
@@ -31,8 +30,6 @@
 }
 
 .grid {
-  
-
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 2em;
@@ -40,11 +37,9 @@
   @media (--media-min-medium) {
     grid-template-columns: 1fr;
   }
-  
 }
 
 .mainContent {
-  
   @nest & a {
     color: var(--color-accent);
 
@@ -57,13 +52,12 @@
 }
 
 .metaContent {
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Sans';
   font-style: normal;
 }
 
 .publishedAt {
-  font-family: 'IBM Plex Mono';
-  font-style: italic;
+  font-family: 'IBM Plex Sans';
   composes: small from './typography.module.css';
   margin: 1.5rem 0 3rem;
 }

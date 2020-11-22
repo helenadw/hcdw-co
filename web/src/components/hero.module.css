@@ -5,12 +5,13 @@
   position: relative;
   top: -70px;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   margin: auto;
   display: flex;
   flex-direction: column-reverse;
   background: var(--color-soft-beige);
   @media (--media-min-medium) {
+    height: 100vh;
     flex-direction: row;
   }
 }
