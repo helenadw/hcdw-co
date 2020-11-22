@@ -6,6 +6,7 @@ import Drop from './icons/drop.svg'
 import Cube from './icons/cube.svg'
 
 
+
 function Services() {
     return (
         <div className={servicesStyles.servicesWrapper}>
@@ -13,7 +14,7 @@ function Services() {
                 <h2 className={servicesStyles.servicesTitle}>services</h2>
                 <div className={servicesStyles.servicesCards}>
                     <div className={servicesStyles.servicesCard}>
-                    <img src={Drop} alt='drop icon'></img>
+                    <img src={Drop} alt='dropper icon'></img>
                     <h4 className={servicesStyles.serviceType}>web design</h4>
                     <p>user-friendly design your customers will love</p>
                     </div>
