@@ -6,8 +6,6 @@
   flex-direction: column;
   border-top: black solid 1px;
   border-bottom: black solid 1px;
-
-  background: var(--color-soft-beige);
 }
 
 .intro-container {
