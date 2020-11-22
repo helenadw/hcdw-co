@@ -17,7 +17,9 @@ export default function Footer(){
 
             </div>
             <div className={footerStyles.logoContainer}>
-                <img src={Logo} alt='logo' className={footerStyles.logo}></img>
+                <Link to='/'>
+                    <img src={Logo} alt='logo' className={footerStyles.logo}></img>
+                </Link>
             </div>
             <div className={footerStyles.menu2Container}>
                 <Link to='/projects' className={footerStyles.footerLink}>projects</Link>

@@ -30,7 +30,7 @@
 
 .title {
   font-size: 1.25rem;
-  padding: 1em;
+  padding: 0 1em 1em;
   @media (hover: hover) {
     @nest .root:hover & {
       text-decoration: none;

@@ -1,0 +1,39 @@
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+
+  background: var(--color-soft-beige);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: auto;
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (--media-min-small) {
+    padding: 7rem 2em;
+    min-width: 1200px;
+  }
+}
+
+.intro-copy {
+  composes: large from './typography.module.css';
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.intro-heading {
+  composes: responsiveTitle4 from './typography.module.css';
+  margin: 0;
+}

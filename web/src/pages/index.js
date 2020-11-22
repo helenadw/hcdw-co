@@ -8,6 +8,10 @@ import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Hero from '../components/hero'
+import Intro from '../components/intro'
+import Testimonial from '../components/testimonial'
+import Services from '../components/services'
+import Start from '../components/start-project'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -119,6 +123,7 @@ const IndexPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Hero />
+      <Intro />
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
         
@@ -130,6 +135,11 @@ const IndexPage = props => {
             browseMoreHref='/projects/'
           />
         )}
+        </Container>
+        <Testimonial />
+        <Services />
+        <Start />
+        <Container>
         {postNodes && (
           <BlogPostPreviewGrid
             title='blog'
@@ -137,7 +147,9 @@ const IndexPage = props => {
             browseMoreHref='/blog/'
           />
         )}
+        
       </Container>
+      
     </Layout>
   )
 }

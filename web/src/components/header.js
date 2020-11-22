@@ -24,7 +24,9 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <li><Link className={styles.navLink} activeClassName={styles.activeNavLink} to='/projects/'>Projects</Link></li>
           <li><Link className={styles.navLink} activeClassName={styles.activeNavLink} to='/blog/'>Blog</Link></li>
           <li><Link className={styles.navLink} activeClassName={styles.activeNavLink} to='/about/'>About</Link></li>
-          <li><Link className={styles.navLink} activeClassName={styles.activeNavLink} to='/contact/'>Contact</Link></li>
+          <li><a href='mailto:hi@hcdw.co' className={styles.navLink} activeClassName={styles.activeNavLink}>Contact</a></li>
+
+          {/* <li><Link className={styles.navLink} activeClassName={styles.activeNavLink} to='/contact/'>Contact</Link></li> */}
         </ul>
       </nav>
     </div>

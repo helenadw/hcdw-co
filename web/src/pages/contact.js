@@ -5,6 +5,7 @@ import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import Form from '../components/typeform'
 
 import { responsiveTitle1 } from '../components/typography.module.css'
 
@@ -42,6 +43,7 @@ const ContactPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{page.title}</h1>
         <BlockContent blocks={page._rawBody || []} />
+        <Form />
       </Container>
     </Layout>
   )
