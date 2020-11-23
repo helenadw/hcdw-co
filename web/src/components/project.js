@@ -6,6 +6,7 @@ import { imageUrlFor } from '../lib/image-url'
 import BlockContent from './block-content'
 import Container from './container'
 import RoleList from './role-list'
+import Start from './start-project'
 
 import styles from './project.module.css'
 
@@ -65,6 +66,7 @@ const { _rawBody, title, categories, mainImage, /*members,*/ publishedAt, relate
           </aside>
         </div>
       </Container>
+      <Start />
     </article>
   )
 }

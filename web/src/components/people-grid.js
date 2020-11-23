@@ -17,7 +17,7 @@ function ProfileCard ({ image, name, _rawBio }) {
               .height(600)
               .fit('crop')
               .url()}
-          />
+          /> 
         )}
       </div>
       <h2 className={styles.headline}>{name}</h2>

@@ -41,6 +41,7 @@
 }
 
 .mainContent {
+  max-width: 800px;
   @nest & a {
     color: var(--color-accent);
 
@@ -63,8 +64,9 @@
 }
 
 .categories {
-  border-top: 0px solid var(--color-black);
+  border-top: 1px solid var(--color-black);
   margin: 2rem 0 3rem;
+  font-family: 'DM Sans', sans-serif;
 
   @nest & ul {
     list-style: none;
@@ -78,12 +80,12 @@
 }
 
 .categoriesHeadline {
-  composes: base from './typography.module.css';
+  composes: responsiveTitle4 from './typography.module.css';
   margin: 0.5rem 0 0;
 }
 
 .relatedProjects {
-  border-top: 0px solid var(--color-black);
+  border-top: 1px solid var(--color-black);
   margin: 2rem 0 3rem;
 
   @nest & ul {
@@ -100,11 +102,17 @@
   }
 }
 
-.related-projects-link:hover {
-  color: blue;
+.related-project-link {
+  font-family: 'DM Sans', sans-serif;
+  color: black;
+  transition: all ease 0.5s;
+}
+
+.related-project-link:hover {
+  color: var(--color-dark-tan);
 }
 
 .relatedProjectsHeadline {
-  composes: base from './typography.module.css';
+  composes: responsiveTitle4 from './typography.module.css';
   margin: 0.5rem 0 0;
 }
