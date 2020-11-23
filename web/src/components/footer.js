@@ -25,7 +25,7 @@ export default function Footer(){
                 <Link to='/projects' className={footerStyles.footerLink}>projects</Link>
                 <Link to='/blog' className={footerStyles.footerLink}>blog</Link>
                 <Link to='/about' className={footerStyles.footerLink}>about</Link>
-                <Link to='/contact' className={footerStyles.footerLink}>contact</Link>
+                <a href='mailto:hi@hcdw.co' className={footerStyles.footerLink}>contact</a>
             </div>
             </div>
       )
