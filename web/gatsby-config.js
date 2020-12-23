@@ -5,6 +5,15 @@ const {
 
 module.exports = {
   plugins: [
+    {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: "UA-185933730-1",
+          head: true,
+          anonymize: true,
+          respectDNT: true,
+        }
+    },
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet', 
     {
