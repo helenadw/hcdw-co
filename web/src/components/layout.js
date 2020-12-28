@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
+import CookieConsent from 'react-cookie-consent';
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -36,6 +37,21 @@ const Layout = ({ children, companyInfo, onHideNav, onShowNav, showNav, siteTitl
         </div>
       </div>
     </footer>
+    <CookieConsent 
+          style={{ 
+            background: "black", 
+            color: "white",  
+          }}
+          buttonStyle={{ 
+            background: "#decdb9",
+            fontWeight: "bold" 
+          }}
+          location="bottom"
+          buttonText="Accept"
+          declineButtonText="Decline"
+          cookieName="gatsby-gdpr-google-analytics">
+          This website uses cookies to improve your user experience
+    </CookieConsent>
   </>
 )
 
