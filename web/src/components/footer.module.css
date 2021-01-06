@@ -10,6 +10,7 @@
   justify-content: space-between;
   @media (--media-min-medium) {
     margin: 0 7.5rem;
+
     max-width: 1200px;
   }
 }
