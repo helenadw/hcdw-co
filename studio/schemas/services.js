@@ -1,6 +1,6 @@
 export default {
-    name: 'service',
-    title: 'Service',
+    name: 'services',
+    title: 'Services',
     type: 'document',
     fields: [
     {
