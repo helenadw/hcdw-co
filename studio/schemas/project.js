@@ -57,6 +57,12 @@ export default {
       of: [{ type: 'reference', to: { type: 'category' } }]
     },
     {
+      name: 'services',
+      title: 'Services',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'services' } }]
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent'
