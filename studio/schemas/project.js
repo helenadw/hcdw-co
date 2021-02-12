@@ -60,7 +60,7 @@ export default {
       name: 'services',
       title: 'Services',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'services' } }]
+      of: [{ type: 'reference', to: { type: 'service' } }]
     },
     {
       name: 'body',
