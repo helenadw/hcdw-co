@@ -48,7 +48,7 @@ const PricingPage = props => {
             <Container>
             <h1 className={responsiveTitle1}>Pricing</h1>
             {pricingNodes && pricingNodes.length > 0 && <PricingPreviewGrid nodes={pricingNodes} />}
-            <ProcingPreviewGrid/>
+            <PricingPreviewGrid/>
             </Container>
         </Layout>
     )
