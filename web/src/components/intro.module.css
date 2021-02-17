@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 800px;
   min-width: auto;
   padding: 3rem 1.5rem;
   margin: 0 auto;
@@ -20,7 +20,6 @@
 
   @media (--media-min-small) {
     padding: 7rem 2em;
-    min-width: 1200px;
   }
 }
 
@@ -32,6 +31,6 @@
 }
 
 .intro-heading {
-  composes: responsiveTitle4 from './typography.module.css';
+  composes: responsiveTitle3 from './typography.module.css';
   margin: 0;
 }

@@ -16,7 +16,10 @@
 
 .footerWrapper {
   box-sizing: border-box;
-  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
   padding: 1.5em;
   margin: 0 auto;
 

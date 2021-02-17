@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import ProjectPreviewGrid from '../components/project-preview-grid'
+import ServicesPreviewGrid from '../components/service-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
@@ -29,6 +30,24 @@ export const query = graphql`
         }
       }
     }
+    service: allSanityService(limit: 12, sort: { fields: [publishedAt], order: DESC }) {
+      edges {
+        node {
+          id
+          publishedAt
+          mainImage {
+            asset {
+              _key
+            }
+            alt 
+          }
+          title
+          slug {
+            current
+          }
+        }
+      }
+    }
   }
 `
 
@@ -43,6 +62,8 @@ const ProjectsPage = props => {
   }
   const projectNodes =
     data && data.projects && mapEdgesToNodes(data.projects).filter(filterOutDocsWithoutSlugs)
+    const serviceNodes =
+    data && data.services && mapEdgesToNodes(data.services).filter(filterOutDocsWithoutSlugs)
   return (
     <Layout>
       <SEO title='Projects' />

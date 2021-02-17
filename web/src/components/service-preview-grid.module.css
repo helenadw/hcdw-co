@@ -1,0 +1,137 @@
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 7rem;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: auto;
+  padding: 1.5em;
+
+  margin: 0 auto;
+
+  @media (--media-min-small) {
+    padding: 2em;
+    min-width: 1200px;
+  }
+}
+
+.services-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+
+  @media (--media-max-small) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  @media (--media-min-medium) {
+  }
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-soft-beige);
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+  transition: all ease 1s;
+  margin-top: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  @media (--media-min-medium) {
+    flex-direction: row;
+    padding: 3rem;
+  }
+}
+
+.services-card:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.services-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 2em;
+  width: 70%;
+  @media (--media-min-medium) {
+    width: 50%;
+    align-items: left;
+  }
+}
+
+.services-title {
+  composes: responsiveTitle2 from './typography.module.css';
+}
+
+.services-type {
+  composes: responsiveTitle3 from './typography.module.css';
+}
+
+.services-para,
+.services-type {
+  margin-top: 0;
+  text-align: center;
+  @media (--media-min-medium) {
+    text-align: left;
+  }
+}
+.services-button {
+  align-self: center;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 30px 0;
+  padding: 0.75em 1.75em;
+  border-radius: 0;
+  min-width: 140px;
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  background-color: black;
+  color: white;
+  @media (--media-min-medium) {
+    align-self: start;
+  }
+}
+
+.services-button:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  background-color: #decdb9;
+  color: black;
+}
+
+.img-div {
+  width: 70%;
+  order: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (--media-min-medium) {
+    width: 40%;
+    order: 4;
+  }
+}
+.img {
+  width: 100%;
+}

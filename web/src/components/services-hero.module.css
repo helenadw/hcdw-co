@@ -1,0 +1,88 @@
+@import '../styles/media-queries.css';
+@import '../styles/vars.css';
+
+.services-hero-container {
+  position: relative;
+  top: -70px;
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+  margin-bottom: -70px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--color-soft-beige);
+  @media (--media-min-medium) {
+    height: 100vh;
+    flex-direction: row;
+  }
+}
+
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (--media-min-medium) {
+    width: 40%;
+    margin-left: 3.75rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.img-container {
+  height: 90vh;
+  width: 100%;
+  background: url('./Images/iPhone.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  @media (--media-min-medium) {
+    width: 60%;
+  }
+}
+
+.hero-small-copy {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.hero-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 0;
+  @media (--media-max-small) {
+    font-size: 30px;
+  }
+  @media (--media-min-medium) {
+    text-align: left;
+  }
+}
+.hero-button {
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 30px 0;
+  padding: 0.75em 1.75em;
+  border-radius: 0;
+  width: 200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  background-color: black;
+  color: white;
+}
+.hero-button:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+  background-color: #decdb9;
+  color: black;
+}

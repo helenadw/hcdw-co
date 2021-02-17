@@ -22,9 +22,10 @@ export default function Footer(){
                 </Link>
             </div>
             <div className={footerStyles.menu2Container}>
+                <Link to='/services' className={footerStyles.footerLink}>services</Link>
                 <Link to='/projects' className={footerStyles.footerLink}>projects</Link>
                 <Link to='/blog' className={footerStyles.footerLink}>blog</Link>
-                <Link to='/about' className={footerStyles.footerLink}>about</Link>
+                {/* <Link to='/about' className={footerStyles.footerLink}>about</Link> */}
                 <a href='mailto:hi@hcdw.co' className={footerStyles.footerLink}>contact</a>
             </div>
             </div>

@@ -20,7 +20,6 @@
 
   @media (--media-min-small) {
     padding: 7rem 2em;
-    min-width: 1200px;
   }
 }
 

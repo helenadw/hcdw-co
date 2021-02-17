@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './header'
 import Footer from './footer'
 import CookieConsent from 'react-cookie-consent';
+import StartProject from './start-project'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
@@ -14,6 +15,7 @@ const Layout = ({ children, companyInfo, onHideNav, onShowNav, showNav, siteTitl
     <footer className={styles.footer}>
     
       <div className={styles.footerWrapper}>
+      <StartProject />
       <Footer />
         {/* <div className={styles.companyAddress}>
           {companyInfo && (

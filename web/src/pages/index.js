@@ -11,7 +11,7 @@ import Hero from '../components/hero'
 import Intro from '../components/intro'
 import Testimonial from '../components/testimonial'
 import Services from '../components/services'
-import Start from '../components/start-project'
+import AboutMe from '../components/about-me'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -56,7 +56,7 @@ export const query = graphql`
       }
     }
 
-    posts: allSanityPost(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
+    posts: allSanityPost(limit: 3, sort: { fields: [publishedAt], order: DESC }) {
       edges {
         node {
           id
@@ -137,9 +137,9 @@ const IndexPage = props => {
         )}
         </Container>
         <Testimonial />
-        <Services />
-        <Start />
+        <AboutMe />
         <Container>
+        <Services />
         {postNodes && (
           <BlogPostPreviewGrid
             title='blog'
