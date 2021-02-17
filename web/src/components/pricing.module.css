@@ -1,4 +1,4 @@
-/* @import '../styles/media-queries.css';
+@import '../styles/media-queries.css';
 @import '../styles/vars.css';
 
 .root {
@@ -115,4 +115,4 @@
 .relatedProjectsHeadline {
   composes: responsiveTitle4 from './typography.module.css';
   margin: 0.5rem 0 0;
-} */
+}
