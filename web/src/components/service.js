@@ -88,7 +88,7 @@ const { _rawBody, _rawExcerpt, title, categories, mainImage, publishedAt, relate
                 </div>
               </div>
             )}
-            {/* {relatedPrices && (
+            {relatedPrices && (
               <div className={styles.relatedProjects}>
                 <h3 className={styles.sectionHeadline}>pricing</h3>
                 <div>
@@ -116,7 +116,7 @@ const { _rawBody, _rawExcerpt, title, categories, mainImage, publishedAt, relate
 
                 </div>
               </div>
-            )} */}
+            )}
            
             {/* <div className={styles.pricingContainer}>
               <h3 className={styles.sectionHeadline}>pricing</h3>
