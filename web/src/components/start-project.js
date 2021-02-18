@@ -8,7 +8,7 @@ function Start() {
     return (
         <div className={startStyles.startWrapper}>
             <div className={startStyles.startContainer}>
-                <div>
+                <div className={startStyles.startCopyContainer}>
                     <h2 className={startStyles.startTitle}>Let's work together</h2>
                     <p className={startStyles.startCopy}>Have a project you want to discuss? Get in touch!</p>
                 </div>

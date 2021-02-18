@@ -2,6 +2,7 @@
 @import '../styles/vars.css';
 
 .footer-container {
+  padding-bottom: 1em;
   box-sizing: border-box;
   width: 100%;
   max-width: 960px;
