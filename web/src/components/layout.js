@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from './header'
+import favicon from './Images/favicon.ico'
+import Helmet from 'react-helmet'
 import Footer from './footer'
 import CookieConsent from 'react-cookie-consent';
 import StartProject from './start-project'
@@ -9,6 +11,9 @@ import styles from './layout.module.css'
 
 const Layout = ({ children, companyInfo, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
+  <Helmet>
+    <link rel='icon' href={favicon} />
+  </Helmet>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <div className={styles.content}>{children}</div>
     
