@@ -10,7 +10,7 @@ function Figure (props) {
       {props.asset && (
         <img
           src={imageUrlFor(buildImageObj(props))
-            .width(1200)
+            .width(800)
             .url()}
           alt={props.alt}
         />

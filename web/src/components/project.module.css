@@ -51,6 +51,9 @@
       }
     }
   }
+  @nest & img {
+    max-width: 400px;
+  }
 }
 
 .metaContent {
